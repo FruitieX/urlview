@@ -621,12 +621,12 @@ into a line of its own in your \n\
 		  fflush (stdout);
 		  if (system (buf) == 0)
 		  {
-			done = 1;
 			break;
 		  }
 	  } while
 		  ((part = strtok(NULL, ":")) != NULL);
 	  free(tmpbuf);
+	  done = 1;
 	}
 	move (LINES - 1, 0);
 	clrtoeol ();
