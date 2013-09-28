@@ -410,9 +410,8 @@ into a line of its own in your \n\
 	exit (1);
   }
 
-  if (current < 0)
-	current = urlcount - 1;
-  
+  current = urlcount - 1;
+
   /*** present the URLs to the user ***/
 
 #ifdef USE_SLANG
